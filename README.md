@@ -1,2 +1,2 @@
-# Haskell-Prolog-S
-## Functional & Logic-based
+# Welcome to the land of Haskell
+
