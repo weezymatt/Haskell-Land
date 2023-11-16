@@ -12,3 +12,15 @@ calculate x =
 factorial :: Int -> Int 
 factorial n = 
  if n == 0 then 1 else n * factorial(n-1)
+
+fibonacci :: Int -> Int 
+fibonacci 0 = 1
+fibonacci 1 = 1
+fibonacci n = fibonacci(n-1) + fibonacci(n-2)
+
+qsort :: Ord a => [a] -> [a]
+qsort [] = []
+qsort (x:xs) = qsort ys ++ [x] ++ qsort zs
+ where
+  ys = [a | a <- xs, a <= x]
+  zs = [b | b <- xs, b > x]
